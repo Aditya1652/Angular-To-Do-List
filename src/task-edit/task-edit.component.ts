@@ -16,7 +16,6 @@ export class TaskEditComponent implements OnInit {
   taskDescription: string = '';
   taskStatus: 'To Do' | 'In Progress' | 'Done' = 'To Do';
   taskId?: number;
-  taskAdditional?: string = '';
 
   constructor(
     private taskService: TaskService,
