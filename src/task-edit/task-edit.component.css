@@ -1,0 +1,50 @@
+.edit-tasks {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.header {
+  font-size: 50px;
+}
+.input input,
+.input label {
+  font-size: 20px;
+}
+select {
+  font-size: 20px;
+}
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 70%;
+  height: auto;
+  box-shadow: 0px 5px 10px black;
+  padding: 20px;
+}
+
+.options label {
+  font-size: 20px;
+}
+
+.input input,
+.options select {
+  width: 100%;
+  padding: 8px;
+}
+.save-button {
+  padding: 5px 10px;
+  width: 30%;
+  align-self: flex-end;
+  background-color: rgba(0, 247, 0, 0.411);
+  font-size: 20px;
+  color: black;
+  transition: 0.5s;
+}
+.save-button:hover {
+  background-color: rgba(2, 94, 2, 0.863);
+  color: black;
+  transition: 0.3s;
+}

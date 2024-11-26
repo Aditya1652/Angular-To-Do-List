@@ -1,0 +1,37 @@
+<div class="add-tasks">
+  <h1 class="header">Add a Task</h1>
+  <form class="form-body" (ngSubmit)="addtask()" #taskForm="ngForm">
+    <div class="input">
+      <label for="name">Task Name :</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="taskName"
+        name="taskName"
+        required
+      />
+    </div>
+
+    <div class="input">
+      <label for="desc">Description :</label>
+      <input
+        type="text"
+        id="desc"
+        [(ngModel)]="taskDescription"
+        name="taskDescription"
+        required
+      />
+    </div>
+
+    <div class="options">
+      <label>Status :</label>
+      <select name="status" [(ngModel)]="taskStatus">
+        <option value="Done">Done</option>
+        <option value="To Do">To Do</option>
+        <option value="In Progress">In Progress</option>
+      </select>
+    </div>
+
+    <button type="add-button" class="btn">ADD</button>
+  </form>
+</div>

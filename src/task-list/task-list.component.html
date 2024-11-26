@@ -1,0 +1,16 @@
+<div class="container">
+  @for(task of tasks; track task.id){
+  <div class="body">
+    <div class="header">
+      <h3>{{ task.title }}</h3>
+      <h4 [appStatusColour]="task.status">{{ task.status }}</h4>
+    </div>
+    <p>{{ task.description }}</p>
+    <div class="button-list">
+      <button (click)="onEdit(task.id)">Edit</button>
+      <button (click)="onReqDetails(task.id)">Details</button>
+      <button (click)="onDelete(task.id)">Delete</button>
+    </div>
+  </div>
+  }
+</div>
